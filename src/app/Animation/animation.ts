@@ -7,47 +7,7 @@ import {
 } from "@angular/animations";
 
 export const AngularAnimation = [
-  trigger("slideInOutUp", [
-    transition(":enter", [
-      style({
-        transform: "translateY(-50%)",
-        opacity: 0
-      }),
-      animate(
-        "400ms ease-in",
-        style({
-          transform: "translateY(-100%)",
-          opacity: 0
-        })
-      )
-    ]),
-    transition(":leave", [
-      style({ zIndex: "0" }),
-      animate("600ms ease-out", style({ transform: "translateY(-80%)" }))
-    ])
-  ]),
-
-  trigger("slideInOutDown", [
-    transition(":leave", [
-      style({ zIndex: "1" }),
-      animate("400ms ease-out", style({ transform: "translateY(100%)" })),
-      transition(":enter", [
-        style({
-          transform: "translateY(-20%)",
-          zIndex: "1",
-          opacity: 0
-        }),
-        animate(
-          "600ms ease-in-out",
-          style({
-            transform: "translateY(-200%)",
-            zIndex: "1",
-            opacity: 0
-          })
-        )
-      ])
-    ])
-  ]),
+ 
 
   trigger("slideInOut", [
     transition(":enter", [
