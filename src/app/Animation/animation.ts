@@ -63,16 +63,5 @@ export const AngularAnimation = [
     ])
   ]),
 
-  trigger("slideView", [
-    state("true", style({ transform: "translateY(100%)", opacity: 0 })),
-    state("false", style({ transform: "translateY(0)", opacity: 1 })),
-    transition(
-      "0 => 1",
-      animate("500ms", style({ transform: "translateY(0)", opacity: 1 }))
-    ),
-    transition(
-      "1 => 1",
-      animate("500ms", style({ transform: "translateY(100%)", opacity: 0 }))
-    )
-  ])
+ 
 ];
